@@ -56,7 +56,7 @@ ROOT_URLCONF = 'proyectocoder.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["C:/Users/luli2/OneDrive/Escritorio/Coder/ProyectoCoder/Plantillas"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

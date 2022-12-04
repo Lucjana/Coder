@@ -1,3 +1,4 @@
+from datetime import timezone
 from django.db import models
 
 # Create your models here.
@@ -27,3 +28,10 @@ class Entregable (models.Model):
     nombre = models.CharField(max_length=50)
     fecha_entrega = models.DateField()
     entregado = models.BooleanField()
+
+
+class Familiar (models.Model):
+    nombre = models.CharField(max_length=50)
+    apellido = models.CharField(max_length=50)
+    edad = models.IntegerField()
+    fecha = models.DateField()
