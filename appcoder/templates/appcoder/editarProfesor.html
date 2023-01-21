@@ -1,0 +1,22 @@
+{% extends "appcoder/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">Editando profesor</h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+
+<form action="{% url 'cursoFormulario %" method="POST"> {% csrf_token %}
+    <table>
+        {{ form. as_table }}
+    </table>
+
+    <input type="submit">
+
+</form>
+
+<h2>{{ mensaje }}</h2>
+<a class= "btn btn-primary" href="{% url 'profeFormulario' %}">Agregar profesor</a>
+{% endblock %}
